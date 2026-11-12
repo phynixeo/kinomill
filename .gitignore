@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-electron/
+dist-tests/
+.tmp-tests/
+release/
+*.log
+.claude/
+.env*
+cookies.txt
+PUBLISH_TO_GITHUB.md
+GITHUB_PAGE_SETUP.md
+release-notes.md
+PUBLISH_STEPS.md

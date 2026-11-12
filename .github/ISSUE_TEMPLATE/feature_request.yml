@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an idea for Kinomill
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How should Kinomill help?
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Check
+      options:
+        - label: This is not about bypassing DRM (those requests are closed).
+          required: true

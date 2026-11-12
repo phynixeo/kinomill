@@ -1,0 +1,47 @@
+name: Bug report
+description: Something in Kinomill doesn't work
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! If a **site stopped working**, first update yt-dlp in **Settings → Components** and try again.
+        **Never paste cookies, cookies.txt contents or private links here.**
+  - type: input
+    id: version
+    attributes:
+      label: Kinomill version
+      description: Shown in Settings → Components.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Downloads, Subscriptions, Converter / editor, DVD / Blu-ray, Photo slideshow, Audio tools, Sign-in, Settings, Installer, Other]
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: Steps to reproduce. For downloads, include the public link if you can share it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Error message or screenshot
+      description: Copy the error text Kinomill shows, or attach a screenshot.

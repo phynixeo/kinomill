@@ -1,0 +1,87 @@
+{
+  "name": "kinomill",
+  "productName": "Kinomill",
+  "version": "1.0.0",
+  "description": "Kinomill by phynixeo: download videos from YouTube and 1000+ sites, then convert, trim, join and burn them, all in one free app.",
+  "author": "phynixeo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phynixeo/kinomill.git"
+  },
+  "homepage": "https://github.com/phynixeo/kinomill#readme",
+  "bugs": {
+    "url": "https://github.com/phynixeo/kinomill/issues"
+  },
+  "keywords": [
+    "video downloader",
+    "youtube downloader",
+    "video converter",
+    "dvd",
+    "yt-dlp",
+    "ffmpeg",
+    "electron",
+    "windows"
+  ],
+  "private": true,
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "build:ui": "vite build",
+    "build:main": "node scripts/build-main.mjs",
+    "build": "npm run build:ui && npm run build:main",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "start": "electron .",
+    "app": "npm run build && electron .",
+    "server": "node dist-electron/devserver.cjs",
+    "browser": "npm run build && node dist-electron/devserver.cjs",
+    "test": "node scripts/build-main.mjs --tests && node --test \"dist-tests/*.test.cjs\"",
+    "dist": "npm run build && electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0",
+    "esbuild": "^0.28.2",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "ws": "^8.22.1"
+  },
+  "build": {
+    "appId": "com.phynixeo.kinomill",
+    "productName": "Kinomill",
+    "copyright": "Copyright © 2026 phynixeo",
+    "directories": {
+      "output": "release",
+      "buildResources": "resources"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/main.cjs",
+      "dist-electron/preload.cjs",
+      "resources/icon.png",
+      "package.json",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md"
+    ],
+    "win": {
+      "target": "nsis",
+      "executableName": "Kinomill",
+      "icon": "resources/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Kinomill",
+      "artifactName": "Kinomill-Setup-${version}.exe"
+    }
+  }
+}
