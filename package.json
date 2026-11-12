@@ -81,7 +81,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "shortcutName": "Kinomill",
-      "artifactName": "Kinomill-Setup-${version}.exe"
+      "artifactName": "Kinomill-Setup.exe"
     }
   }
 }

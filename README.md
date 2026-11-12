@@ -13,7 +13,7 @@ Download videos and music from YouTube and 1000+ sites, then convert, trim, join
 [![License: MIT](https://img.shields.io/github/license/phynixeo/kinomill?color=15110e)](LICENSE)
 ![Windows 10 | 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
-[**⬇ Download for Windows**](https://github.com/phynixeo/kinomill/releases/latest) · [Report a bug](https://github.com/phynixeo/kinomill/issues/new/choose)
+[**⬇ Download for Windows**](https://github.com/phynixeo/kinomill/releases/latest/download/Kinomill-Setup.exe) · [What's new](https://github.com/phynixeo/kinomill/releases/latest) · [Report a bug](https://github.com/phynixeo/kinomill/issues/new/choose)
 
 </div>
 
@@ -58,10 +58,10 @@ Download videos and music from YouTube and 1000+ sites, then convert, trim, join
 
 Requirements: Windows 10 or 11, 64-bit, and an internet connection on the first start.
 
-1. Open the [latest release](https://github.com/phynixeo/kinomill/releases/latest) and download **`Kinomill-Setup-<version>.exe`** from **Assets**.
+1. **[Download Kinomill-Setup.exe](https://github.com/phynixeo/kinomill/releases/latest/download/Kinomill-Setup.exe)**. This always gets the latest version. You can also find it under **Assets** on the [latest release](https://github.com/phynixeo/kinomill/releases/latest).
 2. Run it.
    - Windows may show "Windows protected your PC", because the installer is not code-signed yet. Click **More info**, then **Run anyway**.
-   - Optionally, compare the file's SHA-256 with `SHA256SUMS.txt` on the release page first. In PowerShell, run `Get-FileHash .\Kinomill-Setup-<version>.exe`.
+   - Optionally, compare the file's SHA-256 with `SHA256SUMS.txt` on the release page first. In PowerShell, run `Get-FileHash .\Kinomill-Setup.exe`.
 3. Choose where to install and finish. A desktop shortcut is created.
 4. On the first start, Kinomill downloads its engines from their official GitHub releases into `%APPDATA%\Kinomill\bin`:
    - **yt-dlp:** the download engine.
