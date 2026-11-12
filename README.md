@@ -13,7 +13,7 @@ Download videos and music from YouTube and 1000+ sites, then convert, trim, join
 [![License: MIT](https://img.shields.io/github/license/phynixeo/kinomill?color=15110e)](LICENSE)
 ![Windows 10 | 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
-[**⬇ Download for Windows**](https://github.com/phynixeo/kinomill/releases/latest/download/Kinomill-Setup.exe) · [What's new](https://github.com/phynixeo/kinomill/releases/latest) · [Report a bug](https://github.com/phynixeo/kinomill/issues/new/choose)
+[**⬇ Download for Windows**](https://github.com/phynixeo/kinomill/releases/latest/download/Kinomill-Setup.exe) · [What's new](https://github.com/phynixeo/kinomill/releases/latest) · [Watch on YouTube](https://youtu.be/LdQPD1LblOQ) · [Report a bug](https://github.com/phynixeo/kinomill/issues/new/choose)
 
 </div>
 
